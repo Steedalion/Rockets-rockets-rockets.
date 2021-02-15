@@ -5,6 +5,6 @@
 ## Screenshots
 
 
-<img src='proto.gif'>
+<img src='proto2.gif'>
 
 [Video] (proto.webm)
