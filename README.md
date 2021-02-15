@@ -7,4 +7,4 @@
 
 <img src='proto2.gif'>
 
-[Video] (proto.webm)
+[Video](proto.webm)
