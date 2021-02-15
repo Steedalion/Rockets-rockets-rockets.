@@ -9,7 +9,13 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+    }
+
+    public void RestartScene()
+    {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
 
     public void GameOver()

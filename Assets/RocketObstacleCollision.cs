@@ -29,12 +29,13 @@ public class RocketObstacleCollision : MonoBehaviour
         else if (tag == "finish")
         {
             onCorrectLanding?.Invoke();
-            LevelComplete();
+            StartCoroutine(LevelComplete());
         }
     }
 
     private IEnumerator LevelComplete()
     {
+        yield return new WaitForSeconds(1);
         Debug.Log("Completed");
         gm.LoadNextScene();
         yield return null;
@@ -45,7 +46,7 @@ public class RocketObstacleCollision : MonoBehaviour
         Debug.Log("Crashed");
         gm.GameOver();
         yield return new WaitForSeconds(1);
-        gm.LoadNextScene();
+        gm.RestartScene();
         yield return null;
     }
 }

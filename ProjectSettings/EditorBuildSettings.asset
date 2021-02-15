@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sandbox.unity
     guid: de221746dbaf3bd3a935f9a621be6184
+  - enabled: 1
+    path: Assets/Sandbox 1.unity
+    guid: 16f65227d526893c78bebd1dc1ef0209
   m_configObjects: {}
