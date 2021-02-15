@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayOnThrust : MonoBehaviour
+public class SideThrusts : MonoBehaviour
 {
     private AudioSource audioSource;
-
     public UnityEvent onThrust, onStop;
-    // Start is called before the first frame update
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && !audioSource.isPlaying)
+        if (Input.GetKeyDown(KeyCode.A) ||Input.GetKeyDown(KeyCode.D) && !audioSource.isPlaying)
         {
             audioSource.Play();
             onThrust?.Invoke();
@@ -30,3 +27,4 @@ public class PlayOnThrust : MonoBehaviour
         }
     }
 }
+
