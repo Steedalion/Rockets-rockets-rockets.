@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class RocketObstacleCollision : MonoBehaviour
 {
-    private float threshHold = 2;
+    private float threshHold = 4;
     public GameManager gm;
         public CheatKeys cheatKeys;
 
